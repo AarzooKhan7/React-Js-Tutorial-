@@ -1,7 +1,7 @@
 {
-  "name": "ReplitReact",
+  "name": "React-Js-Tutorial",
   "version": "0.0.1",
-  "homepage": "https://AarzooKhan7.github.io"
+  "homepage": "https://AarzooKhan7.github.io/React-Js-Tutorial",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
