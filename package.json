@@ -1,13 +1,13 @@
 {
-  "name": "React-Js-Tutorial-",
+  "name": "React-Js-Tutorial",
   "version": "0.0.1",
-  "homepage":"http://AarzooKhan7.github.io/React-Js-Tutorial-"
+  "homepage": "https://aarzookhan7.github.io/React-Js-Tutorial-"
 
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-"deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
     "serve": "vite preview"
   },
   "dependencies": {
