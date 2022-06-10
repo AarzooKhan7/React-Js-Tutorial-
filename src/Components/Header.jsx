@@ -33,15 +33,12 @@ export default function Header(props) {
 
 
             <li className="nav-item">
-              <Link to="/test" className="nav-link">Test</Link>
+              <Link to="/notes" className="nav-link">Notes</Link>
             </li>
 
             
           </ul>
-          <div className="d-flex" role="search">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn btn-outline-success" type="submit">Search</button>
-          </div>
+          
         </div>
       </div>
     </div>

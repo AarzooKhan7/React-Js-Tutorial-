@@ -1,13 +1,16 @@
 import React from "react";
-export default function Hero(){
-  return (
+export default function Hero(props){
+ let myStyle= {
+   width:"40%"
+ }
+ return (
     <>
     <div className="card text-center">
   <div className="card-header">
-    Featured
+    {props.title}
   </div>
   <div className="card-body">
-    <h5 className="card-title">Special title treatment</h5>
+    <h5 className="card-title">{props.announcement}</h5>
     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="/" className="btn btn-primary">Go somewhere</a>
   </div>
@@ -18,7 +21,7 @@ export default function Hero(){
 
 
       <div className="card">
-  <img src="images.png" className="card-img-top" alt="logo" />
+  <img src="images.png" className="card-img-top" alt="logo" style= {myStyle}/>
   <div className="card-body">
     <h5 className="card-title">Card title</h5>
     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

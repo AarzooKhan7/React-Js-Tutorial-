@@ -7,7 +7,7 @@ import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Converter from './Pages/Converter';
 import Blogs from './Pages/Blogs';
-import Test from './Pages/Test';
+import Notes from './Pages/Notes';
 function App() {
   return (
     <>
@@ -23,7 +23,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/converter" element={<Converter />}></Route>
           <Route path="/blogs" element={<Blogs />}></Route>
-          <Route path="/test" element={<Test />}></Route>
+          <Route path="/notes" element={<Notes />}></Route>
 
 
 
