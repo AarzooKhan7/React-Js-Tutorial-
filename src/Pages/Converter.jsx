@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 export default function Converter() {
+
+
+
+
   const handleUpClick = () => {
 
     let newText = text.toUpperCase();
@@ -31,7 +35,7 @@ export default function Converter() {
   const handleExtraSpaces = () => {
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "))
-    }
+  }
 
 
 
@@ -77,8 +81,8 @@ export default function Converter() {
       </div>
       <div className="container my-4">
         <h1>Your text summary</h1>
-        <p>{text.split(" ").length} words and {text.length} Characters</p>
-        <p>{0.008 * text.split(" ").length} Minutes Read</p>
+        <p>{text.split(" ").filter((element) => { return element.length !== 0 }).length} words and {text.length} Characters</p>
+        <p>{0.008 * text.split(" ").filter((element) => { return element.length !== 0 }).length} Minutes Read</p>
 
         <h2 className="my-3">Preview</h2>
 
@@ -88,6 +92,8 @@ export default function Converter() {
 
 
       </div>
+
+
     </>
   )
 }
